@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import VideoPlayer from "./components/VideoPlayer";
+import duplicate from "./components/duplicate1";
+import videopa from "./components/VideoPlayer1";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Video Player</h1>
+
+      <VideoPlayer videoUrl="http://localhost:3000/vd/9ac419121bee456ca6664fba33ef6fa7/output.m3u8" />
+      <h1>Video Player</h1>
+      {/* <videopa /> */}
+      <duplicate />
     </div>
   );
 }
