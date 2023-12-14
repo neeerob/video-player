@@ -1,0 +1,88 @@
+/* .signable-form {
+    text-align: center;
+    margin: 20px;
+}
+
+.signature-canvas {
+    border: 1px solid #ccc;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.sign-button,
+.download-button,
+.reset-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.download-button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.reset-button {
+    background-color: #f44336;
+} */
+
+
+
+.signable-form {
+    text-align: center;
+    margin: 20px;
+}
+
+.signature-canvas {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.sign-button,
+.download-button,
+.reset-button,
+.fetch-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.download-button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.fetched-signature {
+    margin-top: 20px;
+}
+
+.fetched-signature img {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
