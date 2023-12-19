@@ -10,6 +10,8 @@
     "fingerprintjs2": "^2.1.4",
     "hls.js": "^1.4.12",
     "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^4.0.269",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pdf": "^7.6.0",
@@ -18,7 +20,8 @@
     "video.js": "^8.6.0",
     "videojs-contrib-hls": "^5.15.0",
     "videojs-hlsjs-plugin": "^1.0.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",

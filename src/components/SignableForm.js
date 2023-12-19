@@ -301,7 +301,7 @@ const SignableForm = () => {
     const signatureData = signatureRef.current.toDataURL();
     setIsSignatureEmpty(false);
     setUserId("yourUserId");
-    saveSignature({ userId, signatureData });
+    saveSignature(signatureData);
   };
 
   const handleDownload = () => {
@@ -321,12 +321,20 @@ const SignableForm = () => {
 
   const saveSignature = async (signature) => {
     try {
-      const response = await fetch("http://localhost:4001/saveSignature", {
+      let sign = JSON.stringify(signature);
+      let data = {
+        signature: sign,
+        name: "Nirob",
+        userId: "userId1",
+        isForOrg: true,
+        organizationId: "orgId1",
+      };
+      const response = await fetch("http://localhost:7001/sgn/crt", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(signature),
+        body: JSON.stringify(data), // Convert the data object to a JSON string
       });
 
       const savedSignature = await response.json();
